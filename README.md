@@ -1,50 +1,50 @@
 # ogrenci_bilgi_sistemi
-🎓 BTÜ OBS Not Hesaplama & Yönetim Sistemi
+🎓 BTÜ Öğrenci Bilgi Sistemi (OBS) Not Hesaplama Projesi
+Bu proje, Bursa Teknik Üniversitesi Ölçme ve Değerlendirme Esasları Yönergesi hükümlerini dijital ortama aktaran, tam işlevli bir web uygulamasıdır. 
+Sistem, öğretim üyelerinin Excel üzerinden toplu not girişi yapmasına ve öğrencilerin kişiselleştirilmiş sonuçlarını görüntülemesine olanak tanır.
 
-Bu proje, Bursa Teknik Üniversitesi Ölçme ve Değerlendirme Esasları Yönergesi hükümlerine yüksek oranda uyumlu olarak geliştirilmiş, web tabanlı bir Not Yönetim Sistemi simülasyonudur.
-Sistem; hoca ve öğrenci rollerini ayırarak, Excel'den toplu veri girişi ve otomatik harf notu hesaplama işlemlerini gerçekleştirmektedir.
+📑 Mevzuat Uyumluluğu (Algoritmik Altyapı)
+Sistem, yönetmelikteki karmaşık hesaplama yöntemlerini otomatik olarak uygular:
 
-🚀 Öne Çıkan Özellikler
+HBP Hesaplama (Madde 5): Ara sınavın %40'ı ile final/bütünleme sınavının %60'ı toplanır; sonuçlar 0.50 kuralına göre en yakın tam sayıya yuvarlanır.
 
-Yönetmelik Uyumlu Hesaplama: 
+Baraj Puanları (Madde 7/3-4): Ham Başarı Puanı (HBP) veya sınav notu (Final/Büt) 35'in altında olan öğrenciler doğrudan FF notu ile değerlendirilir.
 
-Madde 5: Ara sınavın %40, final/bütünleme sınavının %60 etkisi ve 0.50 yuvarlama kuralı.
+Değerlendirme Sistemleri (Madde 7/1):
+
+MNS (Mutlak): Öğrenci sayısı 20'nin altında olan gruplarda uygulanır.
+
+BDS (Bağıl): 20 ve üzeri mevcuda sahip sınıflarda T-Skoru ve çan eğrisi analizi ile harf notu belirlenir.
+
+Bütünleme Esasları (Madde 9/4): Bütünleme sınavı finalin yerini alır; bütünleme grubu kendi istatistiksel dağılımı içinde değerlendirilir.
+
+💻 Kullanılan Teknolojiler
+Backend: Python 3, Flask (RESTful API)
+
+Frontend: React.js, Tailwind CSS (Modern & Duyarlı UI)
+
+Veri Yönetimi: SQLite (Veri Kalıcılığı) ve Pandas (Excel Veri İşleme)
+
+🚀 Öne Çıkan Fonksiyonlar
+Excel Entegrasyonu: .xlsx dosyalarından toplu öğrenci verisi ve not aktarımı.
+
+Sınıf İzolasyonu: Sınıf A ve Sınıf B verilerinin istatistiksel olarak birbirini etkilememesi için tasarlanmış bağımsız hesaplama modülleri.
+
+Rol Tabanlı Erişim: Hoca ve öğrenci için özelleştirilmiş giriş ve işlem panelleri.
 
 
-Madde 7(1): Öğrenci sayısı 20 altındaki sınıflarda Mutlak Not Sistemi (MNS), 20 ve üzerindeki sınıflarda Bağıl Değerlendirme Sistemi (BDS/Çan).
-
-
-Madde 7(3-4): Ham Başarı Puanı (HBP) veya Final/Büt notu 35 altında olan öğrenciler için doğrudan FF barajı.
-
-
-Madde 7(5): BDKL (20 puan) altı öğrencilerin bağıl değerlendirme istatistiklerine dahil edilmemesi.
-
-
-Madde 9(4): Bütünleme sınavına girenlerin final notunun iptal edilip, büt notuyla ayrı bir grupta değerlendirilmesi.
-
-Toplu Veri Girişi: 
-Excel (.xlsx) dosyalarından öğrenci listesi ve notların otomatik içeri aktarılması.
-
-Dinamik Arayüz: Not değişikliklerinde tüm sınıfın harf notlarının (BDS dahil) anında yeniden hesaplanması.
-
-Rol Tabanlı Erişim: Hoca için tam yönetim paneli, öğrenci için kişisel not görüntüleme ekranı.
-🛠️ Kurulum ve Çalıştırma1. Backend (Python/Flask)Bash# Gerekli kütüphaneleri kurun
-pip install flask flask-cors pandas openpyxl numpy
-
-# Uygulamayı başlatın
-python app.py
-2. Frontend (React) 
-
-# Bağımlılıkları yükleyin
+🛠️ Kurulum
+Bağımlılıkları Yükle:pip install flask flask-cors pandas openpyxl numpy
 npm install
 
-# Uygulamayı başlatın
-npm start
-🔑 Test Giriş BilgileriRol
-E-posta Şifre Hoca için: ali.hoca@btu.edu.tr Btu55095!  
-E-posta Şifre Öğrenci için:ahmet.ogr@btu.edu.tr  Btu11225!
-Excel Dosya Yapısı Excel üzerinden toplu not yüklemek için dosyanızın ilk satırı şu başlıklardan oluşmalıdır:
-Öğrenci No, Ad Soyad, Vize, Final, Büt
 
-📝 Lisans:
-Bu proje eğitim amaçlı geliştirilmiştir ve MIT Lisansı ile korunmaktadır.
+Sistemi Başlat:
+
+Backend: python app.py
+
+Frontend: npm start
+
+👥 Giriş Bilgileri:
+Rol       E-posta            Şifre
+Hoca,    ali.hoca@btu.edu.tr,Btu55095!
+Öğrenci, ahmet.ogr@btu.edu.tr,Btu11225!
