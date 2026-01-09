@@ -1,7 +1,7 @@
 # ogrenci_bilgi_sistemi
 🎓 BTÜ OBS Not Hesaplama & Yönetim Sistemi
 
-Bu proje, Bursa Teknik Üniversitesi Ölçme ve Değerlendirme Esasları Yönergesi hükümlerine %100 uyumlu olarak geliştirilmiş, web tabanlı bir Not Yönetim Sistemi simülasyonudur.
+Bu proje, Bursa Teknik Üniversitesi Ölçme ve Değerlendirme Esasları Yönergesi hükümlerine yüksek oranda uyumlu olarak geliştirilmiş, web tabanlı bir Not Yönetim Sistemi simülasyonudur.
 Sistem; hoca ve öğrenci rollerini ayırarak, Excel'den toplu veri girişi ve otomatik harf notu hesaplama işlemlerini gerçekleştirmektedir.
 
 🚀 Öne Çıkan Özellikler
@@ -28,3 +28,20 @@ Excel (.xlsx) dosyalarından öğrenci listesi ve notların otomatik içeri akta
 Dinamik Arayüz: Not değişikliklerinde tüm sınıfın harf notlarının (BDS dahil) anında yeniden hesaplanması.
 
 Rol Tabanlı Erişim: Hoca için tam yönetim paneli, öğrenci için kişisel not görüntüleme ekranı.
+🛠️ Kurulum ve Çalıştırma1. Backend (Python/Flask)Bash# Gerekli kütüphaneleri kurun
+pip install flask flask-cors pandas openpyxl numpy
+
+# Uygulamayı başlatın
+python app.py
+2. Frontend (React)Bash# Bağımlılıkları yükleyin
+npm install
+
+# Uygulamayı başlatın
+npm start
+🔑 Test Giriş BilgileriRol
+E-posta Şifre Hoca için: ali.hoca@btu.edu.tr Btu55095!  
+E-posta Şifre Öğrenci için:ahmet.ogr@btu.edu.tr  Btu11225!
+Excel Dosya Yapısı Excel üzerinden toplu not yüklemek için dosyanızın ilk satırı şu başlıklardan oluşmalıdır:
+Öğrenci No, Ad Soyad, Vize, Final, Büt
+📝 Lisans:
+Bu proje eğitim amaçlı geliştirilmiştir ve MIT Lisansı ile korunmaktadır.
