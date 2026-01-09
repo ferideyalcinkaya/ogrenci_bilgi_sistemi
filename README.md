@@ -45,5 +45,6 @@ E-posta Şifre Hoca için: ali.hoca@btu.edu.tr Btu55095!
 E-posta Şifre Öğrenci için:ahmet.ogr@btu.edu.tr  Btu11225!
 Excel Dosya Yapısı Excel üzerinden toplu not yüklemek için dosyanızın ilk satırı şu başlıklardan oluşmalıdır:
 Öğrenci No, Ad Soyad, Vize, Final, Büt
+
 📝 Lisans:
 Bu proje eğitim amaçlı geliştirilmiştir ve MIT Lisansı ile korunmaktadır.
