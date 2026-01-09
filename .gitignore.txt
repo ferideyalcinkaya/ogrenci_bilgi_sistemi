@@ -1,0 +1,5 @@
+btu_obs.db
+uploads/
+__pycache__/
+node_modules/
+.env
