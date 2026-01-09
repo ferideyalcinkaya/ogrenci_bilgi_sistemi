@@ -33,7 +33,9 @@ pip install flask flask-cors pandas openpyxl numpy
 
 # Uygulamayı başlatın
 python app.py
-2. Frontend (React)Bash# Bağımlılıkları yükleyin
+2. Frontend (React) 
+
+# Bağımlılıkları yükleyin
 npm install
 
 # Uygulamayı başlatın
